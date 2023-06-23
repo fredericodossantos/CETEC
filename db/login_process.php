@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result->num_rows > 0) {
         // Valid login, set session variable and redirect to main.php
         $_SESSION['loggedin'] = true;
-        header("Location: PHP/main.php");
+        header("Location: ../PHP/main.php");
         echo "Login successful";
         exit();
     } else {

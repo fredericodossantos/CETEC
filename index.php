@@ -14,7 +14,7 @@
             echo '<p class="error-message">Invalid email or password.</p>';
         }
         ?>
-        <form action="login.php" method="post">
+        <form action="db/login_process.php" method="post">
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" required>
             <label for="password">Password:</label>

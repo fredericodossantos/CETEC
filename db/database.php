@@ -1,9 +1,9 @@
 <?php
 // Database connection variables
-$servername = "localhost";
+$host = "localhost";
 $username = "root";
 $password = "";
-$dbname = "sipam_db";
+$dbName = "sipam_db";
 
 // Create a connection
 $connection = mysqli_connect($host, $username, $password, $dbName);
