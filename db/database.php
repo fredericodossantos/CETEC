@@ -1,18 +1,18 @@
 <?php
 // Database connection variables
-$host = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
-$dbName = "sipam_db";
+$dbname = "sipam_db";
 
-// Create a connection
-$connection = mysqli_connect($host, $username, $password, $dbName);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check if the connection was successful
-if (!$connection) {
-    die("Failed to connect to the database: " . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 // Set the character set to UTF-8
-mysqli_set_charset($connection, "utf8");
+mysqli_set_charset($conn, "utf8");
 ?>
+
+

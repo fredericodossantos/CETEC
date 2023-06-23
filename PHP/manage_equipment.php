@@ -8,8 +8,8 @@ if (!isset($_SESSION['loggedin'])) {
     exit();
 }
 
-// Connect to the database
 require_once '../db/database.php';
+
 
 // Include add equipment file
 require_once 'add_equipment.php';

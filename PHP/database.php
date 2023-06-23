@@ -10,13 +10,13 @@ $password = "";
 $dbName = "sipam_db";
 
 // Create a connection
-$connection = mysqli_connect($host, $username, $password, $dbName);
+$conn = mysqli_connect($host, $username, $password, $dbName);
 
 // Check if the connection was successful
-if (!$connection) {
+if (!$conn) {
     die("Failed to connect to the database: " . mysqli_connect_error());
 }
 
 // Set the character set to UTF-8
-mysqli_set_charset($connection, "utf8");
+mysqli_set_charset($conn, "utf8");
 ?>
