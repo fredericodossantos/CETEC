@@ -1,4 +1,13 @@
 <?php
+// Start the session
+session_start();
+
+// Check if the user is not logged in, redirect to login.php
+if (!isset($_SESSION['loggedin'])) {
+    header("Location: ../login.php");
+    exit();
+}
+
 // Connect to the database
 $servername = "localhost";
 $username = "root";
